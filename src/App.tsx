@@ -174,7 +174,7 @@ function App() {
               <input className='name' type='text' placeholder='Name' />
               <input className='email' type='email' placeholder='Email' />
             </div>
-            <button className='submit' type='submit'>
+            <button className='submit' type='submit' onClick={(e) => e.preventDefault()}>
               Sign Up
             </button>
           </form>
