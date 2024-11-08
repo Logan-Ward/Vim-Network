@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Breathe from './views/Breathe/Breathe.tsx';
 import platform from './assets/platform.svg';
 import medicine from './assets/medicine.svg';
