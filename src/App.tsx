@@ -33,6 +33,10 @@ function App() {
       duration: .75,
       opacity: 1,
     })
+    .to('.dot5', {
+      duration: .75,
+      opacity: 1,
+    })
     .to('.breathe-container', {
       duration: 1.5,
     })
@@ -63,7 +67,7 @@ function App() {
       display: 'inline',
     })
     .to('.welcome-section', {
-      duration: .75,
+      duration: 1,
       opacity: 1,
     })
     .to('.title-section', {

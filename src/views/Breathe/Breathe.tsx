@@ -12,6 +12,7 @@ function Breathe() {
         <div className='dot dot2'></div>
         <div className='dot dot3'></div>
         <div className='dot dot4'></div>
+        <div className='dot dot5'></div>
       </div>
     </main>
     </>
