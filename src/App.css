@@ -147,7 +147,8 @@
 .signup {
   font-family: "Lato", serif;
   font-size: calc(.45 * var(--max-font));
-  width: calc(.75 *var(--thin-width));
+  /* width: calc(.75 *var(--thin-width)); */
+  width: 100%;
 }
 
 .signup-form {
@@ -181,12 +182,27 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 8vh;
-  padding-bottom: 10vh;
   padding-left: 7vw;
 }
   
 .definition {
   line-height: 1.65;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+  padding-bottom: 10vh;
+}
+
+.contact {
+  font-family: "Lato", serif;
+  font-size: calc(.5 * var(--max-font));
+  margin-top: 20px;
 }
 
 @media (min-aspect-ratio: 12/9) {
@@ -206,6 +222,10 @@
     margin-top: 20vh;
   }
   
+  .title {
+    font-size: calc(1.1 * var(--max-font));
+  }
+  
   .subtitle {
     margin-top: 30px;
   }
@@ -215,7 +235,7 @@
   }
   
   .expect-section {
-    margin-top: 20vh;
+    margin-top: 30vh;
   }
   
   .expect-title {
@@ -223,10 +243,10 @@
   }
   
   .expect-categories {
-    margin-top: 40px;
+    margin-top: 80px;
     width: 80%;
     column-gap: 30px;
-    row-gap: 30px;
+    row-gap: 100px;
   }
   
   .expect-item {
@@ -239,13 +259,18 @@
     margin-right: 30px;
   }
   
+  .herbalism {
+    height: 5.5vh;
+    margin-right: 35px;
+  }
+  
   .description-section {
-    margin-top: 20vh;
+    margin-top: 40vh;
   }
   
   .signup {
     margin-top: 8vh;
-    width: 40%;
+    width: 100%;
   }
   
   .signup-form {
