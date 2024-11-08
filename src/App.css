@@ -1,0 +1,304 @@
+.container {
+  width: 100%;
+  height: fit-content;
+}
+
+.welcome-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.welcome {
+  width: calc(.75 * var(--thin-width));
+  font-family: "Playfair Display";
+  font-size: calc(.55 * var(--max-font));
+}
+
+.title-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.title {
+  width: var(--thin-width);
+  font-family: "Playfair Display";
+  font-size: var(--max-font);
+}
+
+.subtitle {
+  font-family: "Lato", serif;
+  font-size: calc(.5 * var(--max-font));
+  margin-top: 10px;
+}
+
+.mission-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.mission {
+  width: var(--thin-width);
+  font-size: calc(.5 * var(--max-font));
+}
+
+.expect-section {
+  width: 100%;
+  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.expect-title {
+  font-family: "Playfair Display";
+  font-size: calc(.65 * var(--max-font));
+  margin-bottom: 30px;
+}
+
+.expect-categories {
+  display: grid;
+  grid-template-areas:
+    "platform herbalism"
+    "medicine database"
+    "lessons courses";
+  width: var(--thick-width);
+  column-gap: 5px;
+  row-gap: 10px;
+  text-align: left;
+  font-size: calc(.4 * var(--max-font));
+}
+
+.expect-item {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  text-align: left;
+  line-height: 1;
+}
+
+.platform-item {
+  grid-area: platform;
+}
+
+.medicine-item {
+  grid-area: medicine;
+}
+
+.database-item {
+  grid-area: database;
+}
+
+.herbalism-item {
+  grid-area: herbalism;
+}
+
+.lessons-item {
+  grid-area: lessons;
+}
+
+.courses-item {
+  grid-area: courses;
+}
+
+.icon {
+  max-height: 5vw;
+  margin-right: 5px;
+}
+
+.description-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.description {
+  font-family: "Lato", serif;
+  font-size: calc(.5 * var(--max-font));
+  font-weight: bold;
+  width: calc(1.1 * var(--thin-width));
+}
+
+.signup-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.signup {
+  font-family: "Lato", serif;
+  font-size: calc(.45 * var(--max-font));
+  width: calc(.75 *var(--thin-width));
+}
+
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(.4 * var(--max-font));
+  margin-top: 3vh;
+}
+
+.name {
+  margin-right: 10px;
+}
+
+.email {
+}
+
+.submit {
+  margin-top: 15px;
+  font-size: calc(.46 * var(--max-font));
+}
+
+.definition-section {
+  width: 95%;
+  text-align: left;
+  font-family: "Playfair Display";
+  font-size: calc(.5 * var(--max-font));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 8vh;
+  padding-bottom: 10vh;
+  padding-left: 7vw;
+}
+  
+.definition {
+  line-height: 1.65;
+}
+
+@media (min-aspect-ratio: 12/9) {
+  :root {
+    --max-font: 6vw;
+  }
+  
+  .container {
+    
+  }
+  
+  .welcome-section {
+    margin-top: 15vh;
+  }
+  
+  .title-section {
+    margin-top: 15vh;
+  }
+  
+  .subtitle {
+    margin-top: 30px;
+  }
+  
+  .mission-section {
+    margin-top: 20vh;
+  }
+  
+  .expect-section {
+    margin-top: 20vh;
+  }
+  
+  .expect-title {
+    
+  }
+  
+  .expect-categories {
+    margin-top: 40px;
+    width: 80%;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  
+  .expect-item {
+    width: 100%;
+  }
+  
+  .icon {
+    height: 100%;
+    max-height: 6vh;
+    margin-right: 30px;
+  }
+  
+  .description-section {
+    margin-top: 20vh;
+  }
+  
+  .signup {
+    margin-top: 8vh;
+    width: 40%;
+  }
+  
+  .signup-form {
+    margin-top: 8vh;
+    grid-gap: 40px;
+  }
+  
+  .form-inputs {
+    width: 100%;
+  }
+  
+  .name {
+    font-size: calc(.3 * var(--max-font));
+    margin-right: 30px;
+  }
+  
+  .name::placeholder {
+    font-size: calc(.3 * var(--max-font));
+  }
+  
+  .email {
+    font-size: calc(.3 * var(--max-font));
+  }
+  
+  .email::placeholder {
+    font-size: calc(.3 * var(--max-font));
+  }
+  
+  .submit {
+    padding: .4em 1em;
+    font-size: calc(.3 * var(--max-font));
+    width: 25%;
+  }
+  
+  .definition-section {
+    margin-top: 20vh;
+    padding-bottom: 15vh;
+    padding-left: 10vw;
+  }
+  
+  .definition {
+    
+  }
+}
+
+/* @media (max-aspect-ratio: 12/9) {
+  .mission {
+    font-size: calc(.55 * var(--max-font));
+  }
+  
+  .title-section {
+    
+  }
+} */
+
+
