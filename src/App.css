@@ -9,13 +9,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .welcome {
-  width: calc(.75 * var(--thin-width));
-  font-family: "Playfair Display";
-  font-size: calc(.55 * var(--max-font));
+  width: calc(0.75 * var(--thin-width));
+  font-family: 'Playfair Display';
+  font-size: calc(0.55 * var(--max-font));
 }
 
 .title-section {
@@ -25,17 +25,19 @@
   justify-content: center;
   align-items: center;
   margin-top: 8vh;
+  text-align: center;
 }
 
 .title {
-  width: var(--thin-width);
-  font-family: "Playfair Display";
-  font-size: var(--max-font);
+  width: 100%;
+  font-family: 'Playfair Display';
+  font-size: calc(1.4 * var(--max-font));
+  text-align: center;
 }
 
 .subtitle {
-  font-family: "Lato", serif;
-  font-size: calc(.5 * var(--max-font));
+  font-family: 'Lato', serif;
+  font-size: calc(0.5 * var(--max-font));
   margin-top: 10px;
 }
 
@@ -49,8 +51,8 @@
 }
 
 .mission {
-  width: var(--thin-width);
-  font-size: calc(.5 * var(--max-font));
+  width: var(--thick-width);
+  font-size: calc(0.6 * var(--max-font));
 }
 
 .expect-section {
@@ -63,22 +65,22 @@
 }
 
 .expect-title {
-  font-family: "Playfair Display";
-  font-size: calc(.65 * var(--max-font));
+  font-family: 'Playfair Display';
+  font-size: calc(0.65 * var(--max-font));
   margin-bottom: 30px;
 }
 
 .expect-categories {
   display: grid;
   grid-template-areas:
-    "platform herbalism"
-    "medicine database"
-    "lessons courses";
+    'platform herbalism'
+    'medicine database'
+    'lessons courses';
   width: var(--thick-width);
   column-gap: 5px;
   row-gap: 10px;
   text-align: left;
-  font-size: calc(.4 * var(--max-font));
+  font-size: calc(0.4 * var(--max-font));
 }
 
 .expect-item {
@@ -125,12 +127,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vh;
+  margin-top: 10vh;
 }
 
 .description {
-  font-family: "Lato", serif;
-  font-size: calc(.5 * var(--max-font));
+  font-family: 'Lato', serif;
+  font-size: calc(0.5 * var(--max-font));
   font-weight: bold;
   width: calc(1.1 * var(--thin-width));
 }
@@ -145,8 +147,8 @@
 }
 
 .signup {
-  font-family: "Lato", serif;
-  font-size: calc(.45 * var(--max-font));
+  font-family: 'Lato', serif;
+  font-size: calc(0.45 * var(--max-font));
   /* width: calc(.75 *var(--thin-width)); */
   width: 100%;
 }
@@ -157,7 +159,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: calc(.4 * var(--max-font));
+  font-size: calc(0.4 * var(--max-font));
   margin-top: 3vh;
 }
 
@@ -170,21 +172,21 @@
 
 .submit {
   margin-top: 15px;
-  font-size: calc(.46 * var(--max-font));
+  font-size: calc(0.46 * var(--max-font));
 }
 
 .definition-section {
   width: 95%;
   text-align: left;
-  font-family: "Playfair Display";
-  font-size: calc(.5 * var(--max-font));
+  font-family: 'Playfair Display';
+  font-size: calc(0.5 * var(--max-font));
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 8vh;
   padding-left: 7vw;
 }
-  
+
 .definition {
   line-height: 1.65;
 }
@@ -200,8 +202,8 @@
 }
 
 .contact {
-  font-family: "Lato", serif;
-  font-size: calc(.5 * var(--max-font));
+  font-family: 'Lato', serif;
+  font-size: calc(0.5 * var(--max-font));
   margin-top: 20px;
 }
 
@@ -209,110 +211,112 @@
   :root {
     --max-font: 6vw;
   }
-  
+
   .container {
-    
   }
-  
+
   .welcome-section {
     margin-top: 15vh;
   }
-  
+
   .title-section {
     margin-top: 20vh;
   }
-  
+
   .title {
-    font-size: calc(1.1 * var(--max-font));
+    font-size: calc(1.5 * var(--max-font));
   }
-  
+
   .subtitle {
     margin-top: 30px;
   }
-  
+
   .mission-section {
     margin-top: 30vh;
   }
-  
+
+  .mission {
+    width: calc(.9 * var(--thin-width));
+    /* font-size: calc(.5 * var(--max-font)); */
+  }
+
   .expect-section {
     margin-top: 30vh;
   }
-  
+
   .expect-title {
-    
   }
-  
+
   .expect-categories {
     margin-top: 80px;
     width: 80%;
     column-gap: 30px;
     row-gap: 100px;
   }
-  
+
   .expect-item {
     width: 100%;
   }
-  
+
   .icon {
     height: 100%;
     max-height: 6vh;
     margin-right: 30px;
   }
-  
+
   .herbalism {
     height: 5.5vh;
     margin-right: 35px;
   }
-  
+
   .description-section {
     margin-top: 40vh;
   }
-  
+
   .signup {
     margin-top: 8vh;
     width: 100%;
   }
-  
+
   .signup-form {
     margin-top: 8vh;
     grid-gap: 40px;
   }
-  
+
   .form-inputs {
     width: 100%;
   }
-  
+
   .name {
-    font-size: calc(.3 * var(--max-font));
+    font-size: calc(0.3 * var(--max-font));
     margin-right: 30px;
   }
-  
+
   .name::placeholder {
-    font-size: calc(.3 * var(--max-font));
+    font-size: calc(0.3 * var(--max-font));
   }
-  
+
   .email {
-    font-size: calc(.3 * var(--max-font));
+    font-size: calc(0.3 * var(--max-font));
   }
-  
+
   .email::placeholder {
-    font-size: calc(.3 * var(--max-font));
+    font-size: calc(0.3 * var(--max-font));
   }
-  
+
   .submit {
-    padding: .4em 1em;
-    font-size: calc(.3 * var(--max-font));
+    padding: 0.4em 1em;
+    font-size: calc(0.3 * var(--max-font));
     width: 25%;
   }
-  
+
   .definition-section {
-    margin-top: 20vh;
+    margin-top: 30vh;
     padding-bottom: 15vh;
     padding-left: 10vw;
   }
-  
+
   .definition {
-    
   }
 }
 
@@ -325,5 +329,3 @@
     
   }
 } */
-
-

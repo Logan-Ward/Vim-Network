@@ -17,44 +17,20 @@ function App() {
       opacity: 1,
     })
       .to('.dot1', {
-        duration: 1,
+        duration: 1.5,
         opacity: 1,
       })
       .to('.dot2', {
-        duration: 1,
+        duration: 1.5,
         opacity: 1,
       })
       .to('.dot3', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.dot4', {
-        duration: 1,
-        opacity: 1,
-      })
-      .to('.dot5', {
-        duration: 1,
+        duration: 1.5,
         opacity: 1,
       })
       .to('.breathe-container', {
         duration: 1.5,
       })
-      // .to('.dot4', {
-      //   duration: .75,
-      //   opacity: 0,
-      // })
-      // .to('.dot3', {
-      //   duration: .75,
-      //   opacity: 0,
-      // })
-      // .to('.dot2', {
-      //   duration: .75,
-      //   opacity: 0,
-      // })
-      // .to('.dot1', {
-      //   duration: .75,
-      //   opacity: 0,
-      // })
       .to('.breathe-container', {
         duration: 1.5,
         opacity: 0,
@@ -200,9 +176,13 @@ function App() {
           </p>
         </div>
         <div className='contact-section'>
-          <div className='divider' style={{ backgroundColor: '#4B6B44', height: '1px', width: '100%' }}>
-          </div>
-          <p className='contact'>For business inquiries contact: info@vimnetwork.org</p>
+          <div
+            className='divider'
+            style={{ backgroundColor: '#4B6B44', height: '1px', width: '100%' }}
+          ></div>
+          <p className='contact'>
+            For business inquiries contact: info@vimnetwork.org
+          </p>
         </div>
       </main>
     </>

@@ -11,15 +11,25 @@
   opacity: 0;
 }
 
+.breathe-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .breathe {
   font-family: "Playfair Display";
   font-size: calc(.8 * var(--max-font));
+  width: fit-content;
+  margin-bottom: 15px; /* add space between text and dots */
 }
 
 .dots {
   display: flex;
-  flex-direction: row;
-  margin-top: 5vh;
+  gap: calc(3.15 * var(--max-font));
+  justify-content: center;
 }
 
 .dot {
@@ -27,10 +37,12 @@
   width: 2.5vw;
   height: 2.5vw;
   border-radius: 50%;
-  margin: 0 15px;
   opacity: 0;
 }
 
 @media (min-aspect-ratio: 12/9) {
-  
+.breathe {
+  margin-bottom: 30px; /* add space between text and dots */
+}
+
 }

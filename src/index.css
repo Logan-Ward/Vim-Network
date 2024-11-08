@@ -85,7 +85,7 @@ button {
   font-size: calc(.45 * var(--max-font));
   font-weight: 500;
   font-family: inherit;
-  background-color: #6C7163;
+  background-color: #4B6B44;
   color: #F5F5F5;
   cursor: pointer;
   transition: border-color 0.25s;
