@@ -36,22 +36,22 @@ function App() {
     .to('.breathe-container', {
       duration: 1.5,
     })
-    .to('.dot4', {
-      duration: .75,
-      opacity: 0,
-    })
-    .to('.dot3', {
-      duration: .75,
-      opacity: 0,
-    })
-    .to('.dot2', {
-      duration: .75,
-      opacity: 0,
-    })
-    .to('.dot1', {
-      duration: .75,
-      opacity: 0,
-    })
+    // .to('.dot4', {
+    //   duration: .75,
+    //   opacity: 0,
+    // })
+    // .to('.dot3', {
+    //   duration: .75,
+    //   opacity: 0,
+    // })
+    // .to('.dot2', {
+    //   duration: .75,
+    //   opacity: 0,
+    // })
+    // .to('.dot1', {
+    //   duration: .75,
+    //   opacity: 0,
+    // })
     .to('.breathe-container', {
       duration: 1.5,
       opacity: 0,
