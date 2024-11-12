@@ -109,7 +109,7 @@ function App() {
           </p>
         </div>
         <div className='logo-section' style={{ opacity: 0 }}>
-          <img src={'src/assets/Logo.png'} className='logo' />
+          <img src={'public/static/images/Logo.png'} className='logo' />
         </div>
         <div className='title-section' style={{ opacity: 0 }}>
           <h1 className='title'>Vim Network</h1>
