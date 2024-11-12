@@ -1,4 +1,6 @@
-import { useEffect } from 'react';
+import { useEffect, FormEventHandler } from 'react';
+import { gsap } from 'gsap';
+import mailchimp from '@mailchimp/mailchimp_marketing';
 import Breathe from './views/Breathe/Breathe.tsx';
 import platform from './assets/platform.svg';
 import medicine from './assets/medicine.svg';
@@ -6,7 +8,6 @@ import database from './assets/database.svg';
 import herbalism from './assets/herbalism.svg';
 import lessons from './assets/lessons.svg';
 import courses from './assets/courses.svg';
-import { gsap } from 'gsap';
 import './App.css';
 
 function App() {
@@ -28,6 +29,10 @@ function App() {
         duration: 1.5,
         opacity: 1,
       })
+      .to('.breathe2', {
+        duration: 1.5,
+        opacity: 1,
+      })
       .to('.breathe-container', {
         duration: 1.5,
       })
@@ -42,7 +47,11 @@ function App() {
         display: 'inline',
       })
       .to('.welcome-section', {
-        duration: 1,
+        duration: 2,
+        opacity: 1,
+      })
+      .to('.logo-section', {
+        duration: 2,
         opacity: 1,
       })
       .to('.title-section', {
@@ -71,6 +80,17 @@ function App() {
       });
   }, []);
 
+  useEffect(() => {}, []);
+
+  const joinList: FormEventHandler<HTMLFormElement> = (e) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    for (const pair of formData.entries()) {
+      console.log(`${pair[0]}: ${pair[1]}`);
+    }
+  };
+
   // TODO: Make each section fade in as it is scrolled into view
   // const fadeIn = (e: MouseEvent) => {
   //   gsap.to(`#${(e.target as HTMLElement).id}`, {
@@ -87,6 +107,9 @@ function App() {
           <p className='welcome'>
             Welcome to your soon-to-be wellness platform
           </p>
+        </div>
+        <div className='logo-section' style={{ opacity: 0 }}>
+          <img src={'src/assets/Logo.png'} className='logo' />
         </div>
         <div className='title-section' style={{ opacity: 0 }}>
           <h1 className='title'>Vim Network</h1>
@@ -149,19 +172,25 @@ function App() {
         </div>
         <div className='signup-section' style={{ opacity: 0 }}>
           <p className='signup'>
-            If these intentions resonate with you, stay in touch!
+            If these intentions resonate, sign up to the learn more:
           </p>
-          <form className='signup-form'>
+          <form className='signup-form' onSubmit={joinList}>
             <div className='form-inputs'>
-              <input className='name' type='text' placeholder='Name' />
-              <input className='email' type='email' placeholder='Email' />
+              <input
+                name='name'
+                className='name'
+                type='text'
+                placeholder='Name'
+              />
+              <input
+                name='email'
+                className='email'
+                type='email'
+                placeholder='Email'
+              />
             </div>
-            <button
-              className='submit'
-              type='submit'
-              onClick={(e) => e.preventDefault()}
-            >
-              Sign Up
+            <button className='submit' type='submit'>
+              We’re in this together
             </button>
           </form>
         </div>
@@ -172,14 +201,10 @@ function App() {
             <br />
             &nbsp;&nbsp;1. Lively or energetic spirit; enthusiasm; vitality
             <br />
-            &nbsp;&nbsp;Synonyms: energy, strength, power, drive, zeal
+            &nbsp;&nbsp;Synonyms: passion, strength, power, drive, zeal
           </p>
         </div>
         <div className='contact-section'>
-          <div
-            className='divider'
-            style={{ backgroundColor: '#4B6B44', height: '1px', width: '100%' }}
-          ></div>
           <p className='contact'>
             For business inquiries contact: info@vimnetwork.org
           </p>

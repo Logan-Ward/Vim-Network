@@ -8,9 +8,10 @@ function Breathe() {
         <div className='breathe-section'>
           <h1 className='breathe'>take a deep breath in</h1>
           <div className='dots'>
-            <div className='dot dot1'></div>
+            {/* <div className='dot dot1'></div>
             <div className='dot dot2'></div>
-            <div className='dot dot3'></div>
+            <div className='dot dot3'></div> */}
+          <h1 className='breathe breathe2'>and exhale</h1>
           </div>
         </div>
       </main>

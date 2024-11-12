@@ -64,6 +64,13 @@ h3 {
   padding: 0;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
 input {
   font-size: calc(.4 * var(--max-font));
   border-radius: 4px;

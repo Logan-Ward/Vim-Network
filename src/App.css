@@ -13,9 +13,22 @@
 }
 
 .welcome {
-  width: calc(0.75 * var(--thin-width));
+  width: calc(1 * var(--thin-width));
   font-family: 'Playfair Display';
-  font-size: calc(0.55 * var(--max-font));
+  font-size: calc(0.7 * var(--max-font));
+}
+
+.logo-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12vh;
+}
+
+.logo {
+  width: var(--thick-width);
 }
 
 .title-section {
@@ -24,7 +37,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vh;
+  margin-top: 12vh;
   text-align: center;
 }
 
@@ -47,7 +60,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8vh;
+  margin-top: 16vh;
 }
 
 .mission {
@@ -57,7 +70,7 @@
 
 .expect-section {
   width: 100%;
-  margin-top: 8vh;
+  margin-top: 16vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,7 +140,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 16vh;
 }
 
 .description {
@@ -183,7 +196,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 8vh;
+  margin-top: 16vh;
   padding-left: 7vw;
 }
 
@@ -193,18 +206,16 @@
 
 .contact-section {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-top: 8vh;
-  padding-bottom: 10vh;
+  background-color: #E8E8DC;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .contact {
   font-family: 'Lato', serif;
   font-size: calc(0.5 * var(--max-font));
-  margin-top: 20px;
 }
 
 @media (min-aspect-ratio: 12/9) {

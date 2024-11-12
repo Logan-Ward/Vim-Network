@@ -26,10 +26,15 @@
   margin-bottom: 15px; /* add space between text and dots */
 }
 
+.breathe2 {
+  opacity: 0;
+}
+
 .dots {
   display: flex;
-  gap: calc(3.15 * var(--max-font));
+  gap: calc(.8 * var(--max-font));
   justify-content: center;
+  align-items: center;
 }
 
 .dot {
