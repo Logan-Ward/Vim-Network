@@ -1,6 +1,6 @@
 import { useEffect, FormEventHandler } from 'react';
 import { gsap } from 'gsap';
-import mailchimp from '@mailchimp/mailchimp_marketing';
+// import mailchimp from '@mailchimp/mailchimp_marketing';
 import Breathe from './views/Breathe/Breathe.tsx';
 import platform from './assets/platform.svg';
 import medicine from './assets/medicine.svg';
